@@ -12,8 +12,11 @@ function App() {
           paddingBottom: "1rem"
         }}
       >
-        <Link to="/invoices">Invoices</Link> |{" "}
-        <Link to="/profile">Profiles</Link>
+        <Link className="Link" to="/">home</Link>
+        <Link className='Link' to="/invoices">Invoices</Link>
+        <Link className='Link' to="/profile">Profiles</Link>
+        <Link className='Link' to="/unidirectionflow">unidirectionflow</Link>
+        <Link className='Link' to="/test">test</Link>
       </nav>
       <Outlet />
     </div>

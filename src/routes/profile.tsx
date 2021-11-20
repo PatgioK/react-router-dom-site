@@ -1,11 +1,6 @@
 export default function Profile() {
-
-
-    return (
-        <main>
-            ayo
-            </main>
-
-    );
-
+  return ( 
+  <main>
+      ayo
+      </main>);
 }

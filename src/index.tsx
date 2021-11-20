@@ -7,6 +7,8 @@ import reportWebVitals from "./reportWebVitals";
 import Invoices from "./routes/invoices";
 import Profile from "./routes/profile";
 import Invoice from "./routes/invoice";
+import Unidirectionflow from "./routes/unidirectionflow";
+import Test from "./routes/test";
 
 // Routing tutorial: https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md
 
@@ -15,7 +17,10 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route path="unidirectionflow" element={<Unidirectionflow />} />
+          <Route path="test" element={<Test />} />
           <Route path="profile" element={<Profile />} />
+
           <Route path="invoices" element={<Invoices />}>
             <Route
               index
@@ -26,12 +31,14 @@ ReactDOM.render(
               }
             />
             {/* index route, 
-Index routes render in the parent routes outlet at the parent route's path.
-Index routes match when a parent route matches but none of the other children match.
-Index routes are the default child route for a parent route.
-Index routes render when the user hasn't clicked one of the items in a navigation list yet. */}
+            Index routes render in the parent routes outlet at the parent route's path.
+            Index routes match when a parent route matches but none of the other children match.
+            Index routes are the default child route for a parent route.
+            Index routes render when the user hasn't clicked one of the items in a navigation list yet. */}
             <Route path=":invoiceId" element={<Invoice />} />
           </Route>
+
+          {/* '*' is has a special meaning here, it will match when no other routes do.  */}
           <Route
             path="*"
             element={
@@ -40,10 +47,8 @@ Index routes render when the user hasn't clicked one of the items in a navigatio
               </main>
             }
           />
-          {/* '*' is has a special meaning here, it will match when no other routes do.  */}
         </Route>
       </Routes>
-      {/* <App /> */}
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
