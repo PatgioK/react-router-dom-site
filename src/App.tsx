@@ -16,7 +16,10 @@ function App() {
         <Link className='Link' to="/invoices">Invoices</Link>
         <Link className='Link' to="/profile">Profiles</Link>
         <Link className='Link' to="/unidirectionflow">unidirectionflow</Link>
+        <Link className='Link' to="/pvs">PvS</Link>
         <Link className='Link' to="/test">test</Link>
+        <Link className='Link' to='/liftUp'>liftUp</Link>
+        <Link className='Link' to='/control'>control</Link>
       </nav>
       <Outlet />
     </div>
