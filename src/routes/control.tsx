@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 const Control: React.FC = () => {
@@ -38,6 +38,13 @@ const Uncontrolled: React.FC = () => {
     // const inputRef = useRef< HTMLInputElement | null> (null);
     const inputRef:RefObject<HTMLInputElement> = useRef< HTMLInputElement | null> (null);
     
+    // every ref actually has a .current property which stores its actual value.
+    
+    useEffect(() => {
+        inputRef.current!.focus();
+    }, [])
+    // Pass an array as optional second argument. If value in second argument is the same as before re-render
+    // React will skip this effect! Optimization!. In this example it doesnt actually do anything.
 
     function alertValue() {
         // variable!.var is the non-null assertion operator. Tells the compiler this expression
@@ -47,7 +54,9 @@ const Uncontrolled: React.FC = () => {
 
     return (
         <div>
-            <p> Uncontrolled components do not have state data</p>
+            <p> Uncontrolled components do not have state data. also using a ref.current to automatically
+                set focus when this page loads! cool!
+            </p>
             <input type="text" ref={inputRef} />
             <button onClick={alertValue}>Click Me</button>
         </div>

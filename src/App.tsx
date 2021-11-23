@@ -20,6 +20,8 @@ function App() {
         <Link className='Link' to="/test">test</Link>
         <Link className='Link' to='/liftUp'>liftUp</Link>
         <Link className='Link' to='/control'>control</Link>
+        <Link className='Link' to='/key'>Key</Link>
+        <Link className='Link' to='/context'>Context</Link>
       </nav>
       <Outlet />
     </div>

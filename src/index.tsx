@@ -12,6 +12,8 @@ import Test from "./routes/test";
 import Pvs from "./routes/pvs";
 import LiftUp from "./routes/liftUp";
 import Control from "./routes/control";
+import Key from "./routes/key";
+import Context from "./routes/context";
 
 // Routing tutorial: https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md
 
@@ -23,9 +25,11 @@ ReactDOM.render(
           <Route path="unidirectionflow" element={<Unidirectionflow />} />
           <Route path="test" element={<Test />} />
           <Route path="profile" element={<Profile />} />
-          <Route path="pvs" element={<Pvs name="pat"/>} />
+          <Route path="pvs" element={<Pvs name="Pat"/>} />
           <Route path="liftUp" element={<LiftUp obj={["test1", "test2"]}/>} />
           <Route path='control' element={<Control />} />
+          <Route path='key' element={<Key />} />
+          <Route path='context' element={<Context />} />
 
           <Route path="invoices" element={<Invoices />}>
             <Route

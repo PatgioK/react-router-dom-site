@@ -1,3 +1,10 @@
+I'm creating this website firstly to familiarize myself more with react-routers.
+Each page will try to showcase different react features or uses!
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
