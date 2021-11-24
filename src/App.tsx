@@ -36,6 +36,12 @@ function App() {
                 <Link className="Link" to="/context">
                     Context
                 </Link>
+                <Link className="Link" to="/renderProps">
+                    RenderProps
+                </Link>
+                <Link className="Link" to="/hooks">
+                    Hooks
+                </Link>
             </nav>
 
             <Outlet />
