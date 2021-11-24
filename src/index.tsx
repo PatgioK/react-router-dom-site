@@ -14,7 +14,9 @@ import Control from "./routes/control";
 import Key from "./routes/key";
 import Context from "./routes/context";
 import RenderProps from "./routes/renderProps"
-import Hooks from "./routes/hooks";
+import Memo from "./routes/memo";
+import UseCallback from "./routes/useCallback";
+// import Hooks from "./routes/hooks";
 
 // Routing tutorial: https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md
 
@@ -36,7 +38,9 @@ ReactDOM.render(
                     <Route path="key" element={<Key />} />
                     <Route path="context" element={<Context />} />
                     <Route path="renderProps" element={<RenderProps />} />
-                    <Route path="hooks" element={<Hooks />} />
+                    <Route path="memo" element={<Memo />} />
+                    <Route path="useCallback" element={<UseCallback />} />
+                    {/* <Route path="hooks" element={<Hooks />} /> */}
 
                     <Route path="invoices" element={<Invoices />}>
                         <Route

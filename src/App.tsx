@@ -39,9 +39,15 @@ function App() {
                 <Link className="Link" to="/renderProps">
                     RenderProps
                 </Link>
-                <Link className="Link" to="/hooks">
-                    Hooks
+                <Link className="Link" to="/memo">
+                    Memo
                 </Link>
+                <Link className="Link" to="/useCallback">
+                    UseCallback
+                </Link>
+                {/* <Link className="Link" to="/hooks">
+                    Hooks
+                </Link> */}
             </nav>
 
             <Outlet />
