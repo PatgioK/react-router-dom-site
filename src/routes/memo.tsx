@@ -18,6 +18,7 @@ const Memo: React.FC = () => {
 }
 
 const Child: React.FC = memo(() => {
+    
     console.log("child render");
     return (
         <div>

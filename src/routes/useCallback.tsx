@@ -4,7 +4,7 @@ import { useState, memo, useCallback } from "react";
 const UseCallback: React.FC = () => {
     const [localValue, setLocalValue] = useState(0);
 
-    const someFunc = () =>{}
+    const someFunc = () => { }
 
     const memoizedFunc = useCallback(someFunc, []);
 
@@ -15,7 +15,7 @@ const UseCallback: React.FC = () => {
                 LocalValue: {localValue}
             </h1>
             <button onClick={() => setLocalValue(localValue + 1)}>
-            changeLocalValue
+                changeLocalValue
             </button>
         </div>
     )
