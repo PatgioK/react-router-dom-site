@@ -15,6 +15,7 @@ function App() {
                 <Link className="Link" to="/">
                     home
                 </Link>
+                
                 <Link className="Link" to="/invoices">
                     Invoices
                 </Link>
@@ -30,6 +31,7 @@ function App() {
                 <Link className="Link" to="/control">
                     control
                 </Link>
+
                 <Link className="Link" to="/key">
                     Key
                 </Link>
