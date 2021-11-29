@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 
+// wrap a context.provider in your component to pass down data in the tree!
 const globContex = React.createContext<number | null>(null);
 
 const Child: React.FC = () => {
