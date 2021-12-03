@@ -47,9 +47,6 @@ function App() {
                 <Link className="Link" to="/useCallback">
                     UseCallback
                 </Link>
-                {/* <Link className="Link" to="/hooks">
-                    Hooks
-                </Link> */}
             </nav>
 
             <Outlet />
