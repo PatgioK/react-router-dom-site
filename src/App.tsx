@@ -25,6 +25,7 @@ function App() {
                 <Link className="Link" to="/pvs">
                     PvS
                 </Link>
+                
                 <Link className="Link" to="/liftUp">
                     liftUp
                 </Link>
